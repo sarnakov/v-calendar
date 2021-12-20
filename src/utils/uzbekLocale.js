@@ -1,4 +1,4 @@
-return {
+export default {
   name: 'uz-latn',
   weekdays: 'Yakshanba_Dushanba_Seshanba_Chorshanba_Payshanba_Juma_Shanba'.split('_'),
   months: 'Yanvar_Fevral_Mart_Aprel_May_Iyun_Iyul_Avgust_Sentabr_Oktabr_Noyabr_Dekabr'.split('_'),
@@ -30,4 +30,4 @@ return {
     y: 'bir yil',
     yy: '%d yil'
   }
-}
+};
