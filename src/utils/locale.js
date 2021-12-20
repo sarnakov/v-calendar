@@ -287,7 +287,7 @@ export function resolveConfig(config, locales) {
   // Return resolved config
   return config;
 }
-
+import uzbekLocale from './uzbekLocale';
 export default class Locale {
   constructor(config, { locales = defaultLocales, timezone } = {}) {
     const { id, firstDayOfWeek, masks } = resolveConfig(config, locales);
@@ -630,6 +630,10 @@ export default class Locale {
   }
 
   getMonthNames(length) {
+		if(this.id === 'uz'){
+			if(length === 'short') return uzbekLocale.monthsShort;
+			return uzbekLocale.weekdaysShort;
+		}
     const dtf = new Intl.DateTimeFormat(this.id, {
       month: length,
       timezome: 'UTC',

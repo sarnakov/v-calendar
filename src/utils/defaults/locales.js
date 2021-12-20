@@ -74,6 +74,8 @@ const locales = {
   ro: { dow: 2, L: 'DD.MM.YYYY' },
   // Russian
   ru: { dow: 2, L: 'DD.MM.YYYY' },
+  // Russian
+  uz: { dow: 2, L: 'DD.MM.YYYY' },
   // Slovak
   sk: { dow: 2, L: 'DD.MM.YYYY' },
   // Spanish (Spain)
