@@ -631,8 +631,9 @@ export default class Locale {
 
   getMonthNames(length) {
 		if(this.id === 'uz'){
-			if(length === 'short') return uzbekLocale.monthsShort;
-			return uzbekLocale.weekdaysShort;
+			if(length === 'short') return 'Yan_Fev_Mar_Apr_May_Iyun_Iyul_Avg_Sen_Okt_Noy_Dek'.split('_')
+			return 'Yanvar_Fevral_Mart_Aprel_May_Iyun_Iyul_Avgust_Sentabr_Oktabr_Noyabr_Dekabr'.split('_')
+			// return uzbekLocale.weekdaysShort;
 		}
     const dtf = new Intl.DateTimeFormat(this.id, {
       month: length,
