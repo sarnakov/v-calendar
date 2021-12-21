@@ -661,6 +661,10 @@ export default class Locale {
   }
 
   getDayNames(length) {
+		if(this.id === 'uz'){
+			if(length === 'short') return 'Ya_Du_Se_Cho_Pa_Ju_Sha'.split('_');
+			return 'Yakshanba_Dushanba_Seshanba_Chorshanba_Payshanba_Juma_Shanba'.split('_');
+		}
     const dtf = new Intl.DateTimeFormat(this.id, {
       weekday: length,
       timeZone: this.timezone,
